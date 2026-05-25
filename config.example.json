@@ -1,0 +1,54 @@
+{
+  "server_url": "ws://localhost:8000/ws",
+  "backend_host": "0.0.0.0",
+  "backend_port": 8000,
+  "blender_version_min": "4.5",
+  "os_requirement": "Windows 10+",
+  "features": {
+    "screen_capture": {
+      "enabled": true,
+      "default_fps": 1.0,
+      "max_fps": 10.0,
+      "adaptive": true
+    },
+    "keyboard_tracking": {
+      "enabled": true,
+      "detect_shortcuts": true
+    },
+    "mouse_tracking": {
+      "enabled": true,
+      "detect_gestures": true
+    },
+    "voice_recording": {
+      "enabled": true,
+      "model": "base",
+      "language": "en",
+      "auto_transcribe": true
+    },
+    "ocr": {
+      "enabled": true,
+      "engine": "easyocr",
+      "languages": ["en"]
+    },
+    "blender_integration": {
+      "enabled": true,
+      "auto_connect": false
+    }
+  },
+  "ai": {
+    "local_llm": {
+      "enabled": false,
+      "model": "llama-2-7b",
+      "context_length": 4096
+    },
+    "vlm": {
+      "enabled": false,
+      "model": "qwen2.5-vl-7b"
+    }
+  },
+  "storage": {
+    "session_path": "./.session",
+    "database": "./copilot_memory.db",
+    "max_session_size_mb": 500
+  }
+}
