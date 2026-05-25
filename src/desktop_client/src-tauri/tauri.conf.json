@@ -1,0 +1,33 @@
+{
+  "package": {
+    "name": "blender-copilot",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "bundle": {
+      "active": true,
+      "targets": ["msi"],
+      "identifier": "com.blendercopilot.app",
+      "icon": [
+        "icons/icon.ico"
+      ],
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": ""
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "Blender AI Copilot",
+        "width": 800,
+        "height": 600
+      }
+    ]
+  }
+}
