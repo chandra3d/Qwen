@@ -1,0 +1,45 @@
+# Core Dependencies
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+websockets==12.0
+python-multipart==0.0.6
+
+# Screen Capture (Windows)
+mss==9.0.1
+pywin32==306
+
+# Keyboard & Mouse Hooks
+pynput==1.7.6
+keyboard==0.13.5
+
+# Audio & Speech Recognition
+sounddevice==0.4.6
+soundfile==0.12.1
+faster-whisper==1.0.0
+
+# OCR
+paddleocr==2.7.0.3
+paddlepaddle==2.6.0
+
+# Database & Vector Store
+sqlite-utils==3.36
+chromadb==0.4.22
+
+# Utilities
+pydantic==2.5.3
+pydantic-settings==2.1.0
+numpy==1.26.3
+Pillow==10.2.0
+aiofiles==23.2.1
+
+# Blender Add-on (bundled separately, not installed via pip)
+# blender-python-api (available only within Blender)
+
+# Desktop Client Build Tools (for reference)
+# tauri-cli (Rust/Cargo)
+# nodejs dependencies in desktop_client/package.json
+
+# Windows Installer Tools (for reference)
+# pyinstaller==6.3.0
+# nuitka==2.0.0
+# inno-setup (external)
